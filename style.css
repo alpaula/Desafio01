@@ -1,0 +1,599 @@
+*,
+*:after,
+*:before{
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	min-height: 150px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.cabeçalho{
+	width: 100%;
+	border: 8px solid #2e3192;
+	padding: 5px 20px;
+	background: #fcae1b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+}
+.cabeçalhoLogo{
+	width: 6%;
+	min-width: 50px;
+}
+.cabeçalhoMenu{
+
+}
+@media(max-width: 640px){
+	.cabeçalhoMenu{
+		display: none;
+	}
+}
+.cabeçalhoMenu-item{
+	font-size: 90%;
+	margin: 0 7px;
+	color: #2e3192;
+	text-decoration: none;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+.cabeçalho-hamburguer{
+	display: none;
+}
+@media(max-width: 640px){
+	.cabeçalho-hamburguer{
+		display: inline;
+	}
+}
+.cabeçalho-hamburguerItem{
+	width: 35px;
+    height: 5px;
+    background: #2e3192;
+    margin: 6px 0;
+    border-radius: 10px;
+}
+.principal{
+	width: 100%;
+	padding: 0 8% 7% 8%;
+	background: #f26522;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+@media(max-width: 640px){
+	.principal{
+		padding: 0 8%;
+	}
+}
+.principalTitulo{
+	width: 100%;
+	margin: 4%;
+	text-align: center;
+	font-size: 300%;
+	color: #fff;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+.principalModulo{
+	width: 19%;
+	min-width: 200px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.principalModulo{
+		width: 100%;
+		margin-bottom: 15%;
+		justify-content: space-around;
+	}
+}
+.principalModulo-titulo{
+	width: 100%;
+	text-align: center;
+	font-size: 200%;
+	color: #fff;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@media(max-width: 640px){
+	.principalModulo-titulo{
+		display: none;
+	}
+}
+.principalModulo-tituloMobile{
+	display: none;
+	width: 100%;
+	font-size: 250%;
+	text-align: left;
+	color: #fff;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@media(max-width: 640px){
+	.principalModulo-tituloMobile{
+		display: inline;
+	}
+}
+@media(max-width: 450px){
+	.principalModulo-tituloMobile{
+		font-size: 150%;
+	}
+}
+.principalModulo-link{
+	width: 100%;
+	margin-bottom: 1%;
+}
+@media(max-width: 640px){
+	.principalModulo-link{
+		width: 50%;
+	}
+}
+.principalModulo-caixa{
+	width: 70%;
+}
+@media(max-width: 640px){
+	.principalModulo-caixa{
+		width: 50%;
+		padding-left: 4%;
+	}
+}
+.principalModulo-subtitulo{
+	height: 13%;
+	text-align: left;
+	font-size: 100%;
+	color: #fff;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+@media(max-width: 640px){
+	.principalModulo-subtitulo{
+		font-size: 150%;
+	}
+}
+@media(max-width: 450px){
+	.principalModulo-subtitulo{
+		font-size: 90%;
+	}
+}
+.principalModulo-paragrafo{
+	text-align: left;
+	font-size: 100%;
+	color: #fff;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+}
+@media(max-width: 640px){
+	.principalModulo-paragrafo{
+		font-size: 150%;
+	}
+}
+@media(max-width: 450px){
+	.principalModulo-paragrafo{
+		font-size: 90%;
+	}
+}
+.cabeçalhoRodape{
+	border-bottom: 0; 
+}
+.rodape{
+	width: 100%;
+	background: #fff;
+	border: 8px solid #2e3192;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+.rodapeDados{
+	width: 54%;
+	padding: 6%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.rodapeDados{
+		width: 100%;
+	}
+}
+.rodapeDados-sobre{
+}
+.rodapeDados-sobreParagrafo{
+	font-size: 160%;
+	color: #2e3192;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+.rodapeDados-apoio{
+	width: 100%;
+	height: 20vh;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.rodapeDados-apoioTitulo{
+	width: 45%;
+	height: 40%;
+	background: #fcae1b;
+	border: 2px solid #2e3192;
+	border-radius: 13px;
+	color: #2e3192;
+	font-size: 150%;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media(max-width: 450px){
+	.rodapeDados-apoioTitulo{
+		font-size: 80%;
+	}
+}
+.rodapeDados-sociais{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.rodapeDados-sociaisLink{
+	font-size: 150%;
+	color: #2e3192;
+	text-decoration: none;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	margin: 2%;
+}
+@media(max-width: 450px){
+	.rodapeDados-sociaisLink{
+		font-size: 70%;
+	}
+}
+.rodapeDados-sociaisLogo{
+	height: 7vh;
+}
+.rodapeCreditos{
+	width: 46%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+@media(max-width: 640px){
+	.rodapeCreditos{
+		width: 100%;
+	}
+}
+.rodapeCreditos-caixa{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+@media(max-width: 640px){
+	.rodapeCreditos-caixa{
+		display: none;
+	}
+}
+.rodapeCreditos-caixaParagrafo{
+	width: 100%;
+	font-size: 120%;
+	color: #2e3192;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+}
+.rodapeCreditos-caixaLogo{
+	width: 30%;
+}
+.rodapeCreditos-caixaLogoProa{
+	height: 12vh;
+	margin: 0 10px;
+}
+.rodapeCreditos-caixaLogoEducap{
+	height: 9vh;
+	margin: 0 10px;
+}
+.rodapeCreditos-caixaLogo1sti{
+	height: 9vh;
+	margin: 0 10px;
+}
+.rodapeCreditos-caixaFundo{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.Creditos-caixaFundo{
+	width: 100%;
+}
+.rodapeCreditosMobile{
+	width: 100%;
+	border-top: 8px solid #2e3192;
+	display: none;
+}
+@media(max-width: 640px){
+	.rodapeCreditosMobile{
+		padding: 2%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+.rodapeCreditos-caixaParagrafoMobile{
+	font-size: 120%;
+	color: #000;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	text-align: left;
+}
+@media(max-width: 400px){
+	.rodapeCreditos-caixaParagrafoMobile{
+		font-size: 90%;
+	}
+}
+.rodapeCreditos-caixaLogoMobile{
+	width: 20%;
+}
+.rodapeCreditos-caixaLogoProaMobile{
+	width: 10%;
+}
+.rodapeCreditos-caixaLogoEducapMobile{
+	width: 20%;
+}
+.rodapeCreditos-caixaLogo1stiMobile{
+	width: 10%;
+}
+.principalPagina{
+	background: #fff;
+	padding: 0;
+}
+.principalTituloPag{
+	width: 100%;
+	margin-top: 2%;
+	text-align: center;
+	font-size: 300%;
+	color: #f26522;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+.principalSubtituloPag{
+	width: 100%;
+	text-align: center;
+	font-size: 150%;
+	color: #f26522;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+.principalLogoPag{
+	display: none;
+}
+@media(max-width: 640px){
+	.principalLogoPag{
+		width: 50%;
+		height: 10%;
+		margin: 4%;
+		display: inline;
+	}
+}
+.principalInformações{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.principalInformações{
+		flex-flow: column wrap;
+	}
+}
+.principalInformações-caixa{
+	width: 15%;
+	margin-top: 7%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.principalInformações-caixa{
+		width: 100%;
+	}
+}
+.principalInformações-logo{
+	width: 30%;
+	margin: 2%;
+}
+@media(max-width: 640px){
+	.principalInformações-logo{
+		width: 20%;
+	}
+}
+.principalInformações-titulo{
+	margin: 2%;
+	font-size: 90%;
+	color: #f26522;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@media(max-width: 640px){
+	.principalInformações-titulo{
+		font-size: 150%;
+	}
+}
+.principalInformações-paragrafo{
+	margin: 2%;
+	font-size: 80%;
+	color: #f26522;
+	text-align: center;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+}
+@media(max-width: 640px){
+	.principalInformações-paragrafo{
+		font-size: 130%;
+	}
+}
+.principalLado{
+	width: 35%;
+	margin: 2% 0;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.principalLado{
+		display: none;
+	}
+}
+.principalLado-logo{
+	width: 70%;
+}
+.principalLado-titulo{
+	width: 50%;
+	height: 7%;
+	margin-top: 10%;
+	background: #fcae1b;
+	border: 4px solid #2e3192;
+	border-radius: 14px;
+	color: #2e3192;
+	font-size: 140%;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.principalDescrição{
+	width: 60%;
+}
+@media(max-width: 640px){
+	.principalDescrição{
+		width: 80%;
+	}
+}
+.principalDescrição-titulo{
+	width: 100%;
+	margin: 2% 0;
+	text-align: left;
+	font-size: 300%;
+	color: #f26522;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@media(max-width: 640px){
+	.principalDescrição-titulo{
+		font-size: 200%;
+		text-align: center;
+	}
+}
+.principalDescrição-paragrafo{
+	font-size: 150%;
+	color: #2e3192;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+@media(max-width: 640px){
+	.principalDescrição-paragrafo{
+		font-size: 120%;
+		font-weight: 500;
+	}
+}
+.principalSites{
+	width: 100%;
+	margin: 2%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.principalSites{
+		flex-flow: column wrap;
+	}
+}
+.principalSites-caixa{
+	width: 30%;
+	margin-top: 7%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.principalSites-caixa{
+		width: 80%;
+	}
+}
+.principalSites-logo{
+	width: 100%;
+}
+.principalSites-titulo{
+	margin-top: 2%;
+	font-size: 150%;
+	color: #2e3192;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@media(max-width: 640px){
+	.principalSites-titulo{
+		margin-top: 5%;
+	}
+}
+.principalSites-paragrafo{
+	font-size: 150%;
+	color: #2e3192;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+.principalLado-fundo{
+	display: none;
+}
+@media(max-width: 640px){
+	.principalLado-fundo{
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+@media(max-width: 640px){
+	.principalLado-titulo{
+		width: 40%;
+		height: 40%;
+		margin: 10% 0;
+	}
+}
